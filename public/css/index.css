@@ -1,0 +1,80 @@
+.header {
+  background-color: #c02c20;
+  height: 44px;
+}
+.header img {
+  padding-left: 330px;
+  height: 35px;
+}
+.header p {
+  float: right;
+  color: #EEEEEE;
+  font-size: 14px;
+  padding-top: 20px;
+}
+.nav {
+  height: 60px;
+  padding-top: 6px;
+  position: relative;
+}
+.nav .login {
+  width: 90px;
+  height: 40px;
+  background: url(../images/global-sprite-32-v1._CB476259932_.png) -10px -120px no-repeat;
+  display: inline-block;
+}
+.nav a {
+  color: #72b8d3;
+  font-size: 12px;
+  font-weight: 900;
+  text-decoration: underline;
+  position: absolute;
+  top: 33px;
+  left: 40px;
+}
+.nav .search {
+  width: 760px;
+  height: 40px;
+  position: absolute;
+  top: 13px;
+  left: 160px;
+}
+.nav .search .kind {
+  position: absolute;
+  top: -1px;
+  left: 1px;
+  text-decoration: none;
+  font-weight: normal;
+  height: 38px;
+  width: 95px;
+  border-radius: 10px 0 0 10px;
+}
+.nav .search .form-control {
+  width: 580px;
+  height: 38px;
+  border-radius: 0 5px 5px 0;
+  position: absolute;
+  top: -1px;
+  left: 95px;
+}
+.nav .search .searchLogo {
+  height: 38px;
+  width: 40px;
+  background: url(../images/global-sprite-32-v1._CB476259932_.png) -1px -282px no-repeat;
+  position: absolute;
+  top: -1px;
+  left: 635px;
+}
+.nav .advertisement {
+  float: right;
+  padding-top: 8px;
+}
+.nav .advertisement img {
+  width: 300px;
+}
+.main {
+  width: 350px;
+  height: 42px;
+  background: url(../images/global-sprite-32-v1._CB476259932_.png) 0 -579px no-repeat;
+}
+/*# sourceMappingURL=index.css.map */
