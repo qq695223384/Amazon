@@ -1,53 +1,69 @@
-.header{
+body {
+  font-family: 'Hiragino Sans GB', 'Microsoft Yahei', Arial, sans-serif;
+}
+
+.header {
   background-color: #c02c20;
   height: 44px;
-  img{
+
+  h1 {
+    display: none;
+  }
+
+  img {
     padding-left: 330px;
     //width: 533px;
     height: 35px;
   }
-  p{
+
+  p {
     float: right;
     color: #EEEEEE;
     font-size: 14px;
     padding-top: 20px;
   }
 }
-.nav{
+
+.nav {
   height: 60px;
-  padding-top:6px;
+  min-width: 1280px;
+  padding-top: 6px;
   position: relative;
-  .login{
+
+  .login {
 
     width: 90px;
     height: 40px;
-    background:  url(../images/global-sprite-32-v1._CB476259932_.png) -10px -120px no-repeat;
+    background: url(../images/global-sprite-32-v1._CB476259932_.png) -10px -120px no-repeat;
     display: inline-block;
 
   }
-  a{
+
+  a {
     color: #72b8d3;
     font-size: 12px;
-    font-weight:900;
+    font-weight: 900;
     text-decoration: underline;
-    position:absolute;
+    position: absolute;
     top: 33px;
     left: 40px;
   }
-  .search{
+
+  .search {
     //background-color: red;
     width: 760px;
     height: 40px;
     position: absolute;
     top: 13px;
     left: 160px;
-    .kind{
-      position:absolute;
+
+    .kind {
+      position: absolute;
       top: -1px;
       left: 1px;
 
       text-decoration: none;
-      font-weight:normal;
+      font-weight: normal;
       height: 38px;
       width: 95px;
       border-radius: 10px 0 0 10px;
@@ -55,17 +71,17 @@
 
     }
 
-    .form-control{
+    .form-control {
       width: 580px;
       height: 38px;
       border-radius: 0 5px 5px 0;
-      position:absolute;
+      position: absolute;
       top: -1px;
       left: 95px;
 
     }
 
-    .searchLogo{
+    .searchLogo {
       height: 38px;
       width: 40px;
 
@@ -73,7 +89,7 @@
       //background-color: #72787f;
       //width: 25px;
       //height: 25px;
-      background:  url(../images/global-sprite-32-v1._CB476259932_.png) -1px -282px no-repeat;
+      background: url(../images/global-sprite-32-v1._CB476259932_.png) -1px -282px no-repeat;
       position: absolute;
       top: -1px;
       left: 635px;
@@ -81,18 +97,497 @@
 
     }
   }
-  .advertisement{
+
+  .advertisement {
     float: right;
     padding-top: 8px;
-    img{
+
+    img {
       //height: 38px;
       width: 300px;
     }
   }
 }
-.main{
-  width: 350px;
+
+.main {
+  min-width: 1280px;
   height: 42px;
   //background-color: red;
-  background:  url(../images/global-sprite-32-v1._CB476259932_.png) 0 -579px no-repeat;
+  background: url(../images/global-sprite-32-v1._CB476259932_.png) 0px -579px repeat;
+
+  .main-left {
+    height: 40px;
+    width: 190px;
+    //background-color: red;
+    float: left;
+    position: relative;
+
+    button {
+      width: 124px;
+      height: 40px;
+      background-color: transparent;
+      border: 1px solid transparent;
+      position: absolute;
+      left: 45px;
+      box-sizing: border-box;
+    }
+
+    button > p:first-child {
+      font-size: 10px;
+      //line-height: 1px;
+      //text-indent: -17px;
+      margin: 0;
+      float: left;
+    }
+
+    button:hover {
+      border: 1px solid darkgray;
+
+    }
+
+    button > p:last-child {
+      font-weight: bolder;
+      //text-indent: 25px;
+      line-height: normal;
+      //white-space: nowrap;
+      float: left;
+    }
+  }
+
+  .main-center {
+    height: 40px;
+    min-width: 680px;
+    //background-color: lawngreen;
+    float: left;
+
+    .main-center-keywords li {
+      float: left;
+      padding: 16px 8px;
+      font-size: 11px;
+
+      a {
+        color: dodgerblue;
+      }
+
+      a:hover {
+        color: orange;
+      }
+
+    }
+  }
+
+  .main-right {
+    height: 40px;
+    min-width: 350px;
+    //background-color: blue;
+    float: right;
+
+    button {
+      background-color: transparent;
+      border: 1px solid transparent;
+
+    }
+
+    .button1, .button2 {
+      float: left;
+    }
+
+    button > p:nth-child(odd) {
+      margin: 0;
+      font-size: 10px;
+      text-indent: -10px;
+      font-family: 微软雅黑;
+    }
+
+    button > p:nth-child(even) {
+      font-weight: bolder;
+      font-size: 12px;
+      font-family: 微软雅黑;
+      //text-indent: 25px;
+      line-height: normal;
+      //white-space: nowrap;
+      float: left;
+      margin: 0;
+
+    }
+
+    button:hover {
+      border: 1px solid darkgray;
+
+    }
+
+    .glyphicon-triangle-bottom {
+      font-size: 4px;
+      padding: 0 4px;
+
+    }
+
+    .cart {
+      width: 52px;
+      height: 40px;
+      display: inline-block;
+      background: url(../images/global-sprite-32-v1._CB476259932_.png) 0 -335px no-repeat;
+
+      float: left;
+    }
+
+    .cart2 {
+      padding-top: 16px;
+      padding-left: 8px;
+      font-weight: bolder;
+      font-size: 18px;
+      float: left;
+    }
+
+    .button3 {
+      position: relative;
+      padding-left: 1px;
+    }
+
+    .zero {
+      position: absolute;
+      top: 2px;
+      left: 30px;
+      color: orange;
+      font-weight: bolder;
+    }
+
+    .button4 {
+      position: relative;
+      top: -9px;
+      left: 20px;
+    }
+
+
+  }
 }
+
+.article {
+  min-width: 1280px;
+  position: relative;
+
+
+  .border-up {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    position: relative;
+    margin: 50px auto;
+  }
+
+  .border-up span {
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 28px solid transparent;
+    border-right: 28px solid transparent;
+    border-bottom: 28px solid transparent;
+    position: absolute;
+    left: -28px;
+    top: 1px;
+  }
+
+
+}
+
+.article-left {
+  width: 170px;
+  //background-color: red;
+  border: 1px solid #666666;
+  float: left;
+  margin: 0 0;
+  padding-left: 0;
+  padding-top: 5px;
+
+  .article-content {
+    display: block;
+    padding: 3px 15px;
+
+    a {
+      color: black;
+      font-size: 13px;
+    }
+  }
+
+  .article-bottom {
+    padding: 12px 15px;
+
+    a {
+      color: #666666;
+    }
+
+  }
+
+
+  .jiao{
+    position: relative;
+    height: 0px;
+    width: 0px;
+    border-left: 19px solid transparent;
+    border-right: 19px solid transparent;
+    border-bottom: 19px solid black;
+  }
+  .jiao:after{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: -18px;//定位空白小角形的位置
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 18px solid #FFFFFF;
+  }
+  //制作空心三角形（箭头）
+
+
+  .article-line {
+    height: 1px;
+    width: 140px;
+    //background-color: #fff;
+    border: 1px solid #f5f5f5;
+    position: absolute;
+    left: 10px;
+    //margin: 0 auto;
+  }
+
+  .character {
+    color: #f2ede6;
+    float: right;
+  }
+
+  .article-content:hover a {
+    font-weight: bolder;
+  }
+
+  .article-content:hover span {
+    color: black;
+  }
+}
+.article-center{
+  width: 550px;
+  height: 434px;
+  border: 1px solid #000;
+  position: absolute;
+  left: 170px;
+  border-left: 1px solid transparent;
+  background-color: #fff;
+  z-index: 2;
+  //display: none;
+
+  h4{
+    font-weight:400;
+  }
+
+  h4,h5{
+    color: orange;
+  }
+
+  .article-center-content{
+    //width: 300px;
+    background-color: #fff;
+    padding-left: 40px;
+    h5{
+      float: left;
+      padding: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    span{
+      //float: left;
+      padding-left: 20px;
+      padding-bottom: 5px;
+    }
+    p{
+      //padding-left: 90px;
+      padding: 5px 90px;
+      margin: 0;
+    }
+    a{
+      color: #666666;
+    }
+
+
+  }
+}
+.article-right {
+  width: 1105px;
+  height: 313px;
+  //background-color: red;
+  float: right;
+  position: relative;
+  //.slider {
+  //  //height: 340px;
+  //  //width: 790px;
+  //  //margin: 100px auto;
+  //  position: relative;
+  //}
+  .pc-img {
+    width: 1110px;
+    height: 300px;
+    //border: 1px solid #000;
+    background-position: top center;
+  }
+
+  .slider li {
+    position: absolute;
+    display: none;
+
+    a {
+      display: inline-block;
+      width: 1110px;
+      height: 313px;
+    }
+  }
+
+  //对大图片进行居中定位，然后用a标签转换成块级
+
+  .slider li:first-child {
+    display: block;
+  }
+
+
+  //.arrow {
+  //  display: none;
+  //}
+  //
+  //.slider:hover .arrow {
+  //  display: block;
+  //}
+
+  .arrow-left,
+  .arrow-right {
+    font-family: "SimSun", "宋体";
+    width: 30px;
+    height: 60px;
+    //background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 60px;
+    color: #666666;
+    font-weight: 700;
+    font-size: 50px;
+  }
+
+  //.arrow-left:hover,
+  //.arrow-right:hover {
+  //  background-color: rgba(0, 0, 0, .5);
+  //}
+
+  .arrow-left {
+    top: 150px;
+    left: 10px;
+  }
+
+  .arrow-right {
+    top: 150px;
+    right: 10px;
+  }
+  .slider-bottom{
+    position: absolute;
+    top: 310px;
+    //left: 50px;
+    //background-color: red;
+    width: 1108px;
+    height: 240px;
+    .bottom-first,.bottom-second,.bottom-third{
+      width: 290px;
+      height: 280px;
+      //background-color: orange;
+      float: left;
+    }
+    .slider-bottom-border{
+      padding-left: 10px;
+        a{
+          font-size: 20px;
+          font-family: 微软雅黑;
+          font-weight: bolder;
+          color: black;
+          text-decoration: none;
+        }
+      a:hover{
+        color: orange;
+      }
+        span{
+          //display: inline-block;
+          font-family: 微软雅黑;
+          font-weight: bolder;
+          color: #cd4d00;
+          font-size: 20px;
+        }
+      }
+    .bottom-line-one{
+      height: 140px;
+      //width: 1px;
+      //background-color: #fff;
+      border: 0.5px solid #dddddd;
+      position: absolute;
+      left: 290px;
+      top: 10px;
+      //margin: 0 auto;
+    }
+    .bottom-line-two{
+      height: 140px;
+      //width: 1px;
+      //background-color: #fff;
+      border: 0.5px solid #dddddd;
+      position: absolute;
+      left: 580px;
+      top: 10px;
+      //margin: 0 auto;
+    }
+    }
+  .bottom-second{
+    position: relative;
+    .bottom-second-center{
+      width: 290px;
+      .bottom-second-center-left{
+        padding-top: 10px;
+        padding-left: 15px;
+        float: left;
+        span{
+          display: block;
+          color: #cd4d00;
+          font-weight: bolder;
+        }
+        }
+        a{
+          font-size: 24px;
+          color: #cd4d00;
+          text-decoration: none;
+          font-weight: bolder;
+        }
+      a:hover{
+        color: orange;
+      }
+      }
+      .bottom-second-center-right{
+        float: right;
+      }
+    .bottom-second-check{
+      position: absolute;
+      top: 140px;
+      left: 20px;
+        text-decoration: none;
+        color: #282828;
+      }
+      a:hover{
+        color: orange;
+      }
+
+    }
+  .bottom-forth{
+    padding-top: 20px;
+  }
+    }
+
+
+
+
+
+
+
+
