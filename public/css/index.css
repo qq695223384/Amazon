@@ -557,11 +557,122 @@ body {
   left: 20px;
   display: none;
 }
+.slider .slider-left .slider-left-cate {
+  text-align: center;
+  padding-top: 30px;
+}
+.slider .slider-left .slider-left-cate .slider-left-cate-title {
+  font-size: 24px;
+  font-weight: bolder;
+  color: black;
+  text-align: left;
+}
+.slider .slider-left .slider-left-cate ul > li {
+  float: left;
+  background-color: #f5f5f5;
+  width: 200px;
+  padding: 15px 0;
+}
+.slider .slider-left .slider-left-cate ul > li span {
+  font-size: 18px;
+  font-weight: bolder;
+  color: black;
+}
 .slider .slider-right {
-  height: 1000px;
   background-color: #f9f9f9;
   position: absolute;
   top: -105px;
   right: 0;
+}
+.slider .slider-right .slider-right-one {
+  position: relative;
+}
+.slider .slider-right .slider-right-one img {
+  display: block;
+}
+.slider .slider-right .slider-right-one a {
+  float: right;
+}
+.slider .slider-right .slider-right-one a .slider-right-one-logo {
+  display: inline-block;
+  width: 14px;
+  height: 11px;
+  background: url(../images/ad_feedback_icon_1Xsprite._CB323875250_.png) 0 0 no-repeat;
+}
+.slider .slider-right .slider-right-one a:hover {
+  color: orange;
+}
+.slider .slider-right .slider-right-one a:hover .slider-right-one-logo {
+  width: 14px;
+  height: 11px;
+  background: url(../images/ad_feedback_icon_1Xsprite._CB323875250_.png) 0 -13px no-repeat;
+}
+.slider .slider-right .slider-right-one .slider-line {
+  height: 1px;
+  width: 260px;
+  border: 0.5px solid #666666;
+  position: absolute;
+  left: 15px;
+  top: 265px;
+}
+.slider .slider-right .slider-right-common {
+  text-align: center;
+  position: relative;
+}
+.slider .slider-right .slider-right-common .slider-right-two-title {
+  text-align: center;
+  font-size: 24px;
+  padding-left: 44px;
+  line-height: 110px;
+}
+.slider .slider-right .slider-right-common ol > li {
+  text-align: center;
+}
+.slider .slider-right .slider-right-common ol > li span {
+  font-size: 38px;
+  color: #c4c4c4;
+  padding-right: 10px;
+}
+.slider .slider-right .slider-right-common a {
+  height: 30px;
+  line-height: 30px;
+}
+.slider .slider-right .slider-right-common .slider-line {
+  height: 1px;
+  width: 260px;
+  border: 0.5px solid #666666;
+  position: absolute;
+  left: 15px;
+  bottom: 0px;
+}
+.slider .slider-right .slider-right-three .slider-right-two-title {
+  text-align: center;
+  font-size: 24px;
+  padding-left: 14px;
+  line-height: 110px;
+}
+.slider .slider-right .slider-right-four,
+.slider .slider-right .slider-right-five,
+.slider .slider-right .slider-right-six {
+  position: relative;
+}
+.slider .slider-right .slider-right-four img,
+.slider .slider-right .slider-right-five img,
+.slider .slider-right .slider-right-six img {
+  padding: 15px;
+}
+.slider .slider-right .slider-right-four .slider-line,
+.slider .slider-right .slider-right-five .slider-line,
+.slider .slider-right .slider-right-six .slider-line {
+  height: 1px;
+  width: 260px;
+  border: 0.5px solid #666666;
+  position: absolute;
+  left: 15px;
+  bottom: 0px;
+}
+.slider .slider-right .slider-right-six img {
+  padding: 20px 3px;
+  padding-bottom: 40px;
 }
 /*# sourceMappingURL=index.css.map */
